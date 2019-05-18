@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Application",
+            "request": "launch",
+            "mainClass": "Application",
+            "projectName": "java_9c442fdb"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Dealership",
+            "request": "launch",
+            "mainClass": "Dealership",
+            "projectName": "java_9c442fdb"
+        }
+    ]
+}

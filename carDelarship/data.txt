@@ -1,0 +1,6 @@
+CLASSPATH
+%JAVA_HOME%\lib;%JAVA_HOME%\jre\lib;.;
+
+https://stackoverflow.com/questions/18093928/what-does-could-not-find-or-load-main-class-mean
+
+C:\Program Files (x86)\Common Files\Oracle\Java\javapath
