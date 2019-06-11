@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Synchronized;
 
 public class Sequence {
 
