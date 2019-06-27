@@ -32,6 +32,10 @@ public class Main {
 }
 
 
+
+
+
+
 // za pomoca interfejsu runnable
 class Task implements Runnable {
 

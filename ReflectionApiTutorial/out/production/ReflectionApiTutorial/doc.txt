@@ -1,0 +1,22 @@
+Java Reflection makes it possible to inspect classes, interfaces, fields and methods at runtime, without knowing the names of the classes, methods etc. at compile time. It is also possible to instantiate new objects, invoke methods and get/set field values using reflection.
+
+Java Reflection is quite powerful and can be very useful. For instance, Java Reflection can be used to map properties in JSON files to getter / setter methods in Java objects, like Jackson, GSON, Boon etc. does. Or, Reflection can be used to map the column names of a JDBC ResultSet to getter / setter methods in a Java object.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+CLASS
+Using Java Reflection you can inspect Java classes at runtime. Inspecting classes is often the first thing you do when using Reflection. From the classes you can obtain information about
+
+Class Name
+Class Modifies (public, private, synchronized etc.)
+Package Info
+Superclass
+Implemented Interfaces
+Constructors
+Methods
+Fields
+Annotations
+
+When using the Class.forName() method you must supply the fully qualified class name. That is the class name including all package names. For instance, if MyObject is located in package com.jenkov.myapp then the fully qualified class name is com.jenkov.myapp.MyObject
+
+The Class.forName() method may throw a ClassNotFoundException if the class cannot be found on the classpath at runtime.
+===========================================================================

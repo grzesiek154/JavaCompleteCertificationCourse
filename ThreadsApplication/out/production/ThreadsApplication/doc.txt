@@ -8,7 +8,7 @@ Another difference between start() and run() in Java thread is that you can not 
 Jezeli chcemy uzywac wielewatkowosc, zawsze trzeba utworzyc klase thread na ktorej wywoalmy metoda start()
 
 
-Procesor daj kontorej jednemu  watkowi naraz
+Procesor daj kontorole jednemu  watkowi naraz
 
 synchronized values
 jesli jakis zasob jest wspoldzielony, i nie jest "thread safety" moze do doporawdzic do problemow np. podczas gdy jeden z watkow zostanie azstopowany a w tym czasie inny watek zmieni ta wartosc tego zasobu
@@ -33,3 +33,9 @@ Listy nie sa domyslnie thread safty zeby nie zpowalnial oto dzialania
 Vector jest thread safty
 
 Concurrent Collections
+
+
+producer and consumer part
+
+questionsList.wait() - sprawia ze aktualny watek oczekuje notyfikacji aby byc wywolany, i przekazuje kontrole innemu blokowi kodu
+questionsList.notif() - przekazuje informacje ze aktualny watek zakonczykl swoje dzialanie i inny watek moze przejac kontrole
