@@ -19,6 +19,7 @@ public class Producer implements Runnable {
             synchronized(this) {
                 int nextQuestion = questionNo++;
                 questionsQueue.put(nextQuestion);
+
                 System.out.println("Got new question: " + nextQuestion);
             }
         } catch (InterruptedException e) {
