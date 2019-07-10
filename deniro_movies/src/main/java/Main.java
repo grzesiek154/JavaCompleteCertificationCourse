@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Main {
 
-   static String csv = "deniro.csv";
+    static final String CSV = "deniro.csv";
 
     public static void main(String[] args) {
 
@@ -15,10 +15,15 @@ public class Main {
         //list.add(array);
 
 
-        dataManager.writeDate(array2, csv);
+        dataManager.writeDate(array2, CSV);
 
-        List<String[]> data = dataManager.readData(csv);
+        List<String[]> data = dataManager.readData(CSV);
+        printData(data);
 
+
+    }
+
+    private static void printData(List<String[]> data) {
         for (String[] line : data){
             for(int i = 0; i< line.length; i++){
                 System.out.println(line[i]);
